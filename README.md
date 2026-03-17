@@ -1,17 +1,18 @@
 # KRAS G12C Inhibitor Discovery — Autonomous Agent Results
 
-## Status (Batch 32)
+## Status (Batch 48)
 
 | Metric | Value |
 |--------|-------|
-| Total molecules evaluated | **1,745** |
-| Total hits (pass all criteria) | **753** (43% hit rate) |
-| Tier 1 hits (> -7.0 kcal/mol) | 212 |
-| Tier 2 leads (> -8.5 kcal/mol) | 344 |
-| **Tier 3 candidates (> -10.0 kcal/mol)** | **197** |
-| Best docking score | **-12.16 kcal/mol** |
+| Total molecules evaluated | **2,456** |
+| Total hits (pass all criteria) | **991** (40% hit rate) |
+| Tier 1 hits (> -7.0 kcal/mol) | ~230 |
+| Tier 2 leads (> -8.5 kcal/mol) | ~510 |
+| **Tier 3 candidates (> -10.0 kcal/mol)** | **250** |
+| Best docking score | **-12.18 kcal/mol** |
 | Sotorasib calibration | -8.17 kcal/mol (PASS) |
-| Improvement over sotorasib | **3.99 kcal/mol** |
+| Improvement over sotorasib | **4.01 kcal/mol** |
+| Unique Murcko scaffolds (Tier 2+) | **150** |
 
 ## Top 10 Molecules
 
