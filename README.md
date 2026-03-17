@@ -1,17 +1,17 @@
 # KRAS G12C Inhibitor Discovery — Autonomous Agent Results
 
-## Status (Batch 72)
+## Status (Batch 100 Milestone)
 
 | Metric | Value |
 |--------|-------|
-| Total molecules evaluated | **3,301** |
-| Total hits (pass all criteria) | **1,315** (40% hit rate) |
-| Tier 1 hits (> -7.0 kcal/mol) | ~280 |
-| Tier 2 leads (> -8.5 kcal/mol) | ~715 |
-| **Tier 3 candidates (> -10.0 kcal/mol)** | **320** |
-| Best docking score | **-12.28 kcal/mol** |
+| Total molecules evaluated | **4,285** |
+| Total hits (pass all criteria) | **1,681** (39% hit rate) |
+| Tier 1 hits (> -7.0 kcal/mol) | 553 |
+| Tier 2 leads (> -8.5 kcal/mol) | 721 |
+| **Tier 3 candidates (> -10.0 kcal/mol)** | **407** |
+| Best docking score | **-12.40 kcal/mol** |
 | Sotorasib calibration | -8.17 kcal/mol (PASS) |
-| Improvement over sotorasib | **4.11 kcal/mol** |
+| Improvement over sotorasib | **4.23 kcal/mol** |
 | Unique Murcko scaffolds (Tier 2+) | **150+** |
 
 ## Top 10 Molecules
@@ -115,5 +115,5 @@ Our molecules are **4.0 kcal/mol better** than sotorasib, **simpler**, **more dr
 
 ---
 *Generated autonomously by Claude drug discovery agent*
-*Last updated: Batch 72 — 3,301 molecules evaluated, 1,315 hits, 320 Tier 3 candidates*
-*Best molecule: -12.28 kcal/mol (4.11 kcal/mol better than sotorasib)*
+*Last updated: Batch 100 — 4,285 molecules evaluated, 1,681 hits, 407 Tier 3 candidates*
+*Best molecule: -12.40 kcal/mol (4.23 kcal/mol better than sotorasib)*
