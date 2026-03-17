@@ -1,14 +1,14 @@
 # KRAS G12C Inhibitor Discovery — Autonomous Agent Results
 
-## Status (Batch 100 Milestone)
+## Status (Batch 132 — 5000+ Molecules Milestone)
 
 | Metric | Value |
 |--------|-------|
-| Total molecules evaluated | **4,285** |
-| Total hits (pass all criteria) | **1,681** (39% hit rate) |
-| Tier 1 hits (> -7.0 kcal/mol) | 553 |
-| Tier 2 leads (> -8.5 kcal/mol) | 721 |
-| **Tier 3 candidates (> -10.0 kcal/mol)** | **407** |
+| Total molecules evaluated | **5,180** |
+| Total hits (pass all criteria) | **2,127** (41% hit rate) |
+| Tier 1 hits (> -7.0 kcal/mol) | ~600 |
+| Tier 2 leads (> -8.5 kcal/mol) | ~1,050 |
+| **Tier 3 candidates (> -10.0 kcal/mol)** | **476** |
 | Best docking score | **-12.40 kcal/mol** |
 | Sotorasib calibration | -8.17 kcal/mol (PASS) |
 | Improvement over sotorasib | **4.23 kcal/mol** |
@@ -115,5 +115,6 @@ Our molecules are **4.0 kcal/mol better** than sotorasib, **simpler**, **more dr
 
 ---
 *Generated autonomously by Claude drug discovery agent*
-*Last updated: Batch 100 — 4,285 molecules evaluated, 1,681 hits, 407 Tier 3 candidates*
+*Last updated: Batch 132 — 5,180 molecules evaluated, 2,127 hits, 476 Tier 3 candidates*
 *Best molecule: -12.40 kcal/mol (4.23 kcal/mol better than sotorasib)*
+*Agent is still running — numbers continue to grow*
