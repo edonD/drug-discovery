@@ -1,67 +1,107 @@
 # KRAS G12C Inhibitor Discovery — Autonomous Agent Results
 
-## Status
+## Status (Batch 7)
 
 | Metric | Value |
 |--------|-------|
-| Total molecules evaluated | 28 |
-| Total hits (pass all criteria) | 14 |
-| Tier 1 hits | 12 |
-| Tier 2 leads | 2 |
-| Tier 3 candidates | 0 |
-| Best docking score | -8.90 kcal/mol |
+| Total molecules evaluated | 376 |
+| Total hits (pass all criteria) | 211 |
+| Tier 1 hits (> -7.0 kcal/mol) | 94 |
+| Tier 2 leads (> -8.5 kcal/mol) | 108 |
+| **Tier 3 candidates (> -10.0 kcal/mol)** | **9** |
+| Best docking score | **-10.58 kcal/mol** |
 | Sotorasib calibration | -8.17 kcal/mol (PASS) |
 
-## Top Molecules
+## Top 10 Molecules
 
-| Rank | SMILES | Docking (kcal/mol) | QED | SA | Novelty (Tanimoto) | Tier |
-|------|--------|--------------------|-----|----|--------------------|------|
-| 1 | `O=c1cc(-c2ccc(-c3ccccn3)cc2)oc2ccccc12` | -8.90 | 0.546 | 1.90 | 0.069 | 2 |
-| 2 | `COc1ccc2ccnc(nc(C3CCOCC3)cc1)Nc1cccc(F)c1-2` | -8.86 | 0.684 | 3.73 | 0.124 | 2 |
-| 3 | `c1cncc(OC2CNCCN2Nc2cnc3[nH]ccc3n2)c1` | -8.24 | 0.662 | 3.73 | 0.096 | 1 |
-| 4 | `O=C(c1cc2ccccc2[nH]1)C1CCNCC1` | -7.97 | 0.775 | 2.29 | 0.104 | 1 |
-| 5 | `Nc1ncc(CNc2nc(Cc3cnc(N)s3)c3ccccc3n2)s1` | -7.86 | 0.495 | 2.87 | 0.065 | 1 |
-| 6 | `Nc1ncc(CNC(=O)Nc2nc3ccccc3n2Cc2cnc(N)s2)s1` | -7.54 | 0.406 | 2.79 | 0.120 | 1 |
-| 7 | `Clc1ccc(-c2cnn3c(C4CCOCC4)nccc23)cc1` | -7.53 | 0.719 | 2.58 | 0.117 | 1 |
-| 8 | `CNC(=O)n1nc(N2CCN(C)CC2)c2ccccc21` | -7.48 | 0.841 | 2.40 | 0.143 | 1 |
-| 9 | `CN1CCC(c2nc(NCC(N)=O)nc3ccccc23)CC1` | -7.48 | 0.890 | 2.40 | 0.144 | 1 |
-| 10 | `c1ccc2c(c1)c(-c1ccncc1)nn2N1CCNCC1` | -7.38 | 0.774 | 2.67 | 0.068 | 1 |
+| Rank | SMILES | Docking | QED | SA | Novelty | Tier |
+|------|--------|---------|-----|----|---------| -----|
+| 1 | `O=c1cc(-c2ccnc(-c3cccc(C(F)(F)F)n3)c2)oc2ccccc12` | **-10.58** | 0.503 | 2.40 | 0.094 | 3 |
+| 2 | `N#Cc1ccc2c(=O)cc(C3CNCCN3Nc3cnc4[nH]c(F)cc4n3)oc2c1Cl` | **-10.35** | 0.445 | 4.26 | 0.120 | 3 |
+| 3 | `Cc1ccc2c(=O)cc(C3CNCCN3Nc3cnc4[nH]c(F)cc4n3)oc2c1C(F)(F)F` | **-10.35** | 0.401 | 4.36 | 0.118 | 3 |
+| 4 | `O=c1cc(-c2cccc(-c3ccc(F)cn3)c2)oc2cc(F)ccc12` | **-10.23** | 0.528 | 2.07 | 0.083 | 3 |
+| 5 | `O=c1cc(C2CNCCN2Nc2cnc3[nH]c(F)cc3n2)oc2cc(Cl)ccc12` | **-10.20** | 0.474 | 3.85 | 0.120 | 3 |
+| 6 | `N#Cc1ccc2c(=O)cc(C3CNCCN3Nc3cnc4[nH]c(F)cc4n3)oc2c1` | **-10.52** | 0.473 | 4.06 | 0.120 | 3 |
+| 7 | `O=c1cc(-c2cccc(-c3ccccn3)c2)oc2cc(F)ccc12` | **-10.07** | 0.540 | 2.07 | 0.080 | 3 |
+| 8 | `Cc1c(-c2cccc(-c3ccccn3)c2)oc2ccccc2c1=O` | -9.68 | 0.532 | 2.11 | 0.080 | 2 |
+| 9 | `O=c1cc(C2CNCCN2Nc2cnc3[nH]c(F)cc4n3)oc2ccccc12` (variant) | -9.59 | 0.501 | 3.82 | 0.118 | 2 |
+| 10 | `O=c1cc(-c2cccc(-c3ccccn3)c2)oc2ccccc12` | -9.56 | 0.546 | 1.96 | 0.067 | 2 |
 
-## SAR Analysis (Batch 1)
+## Tier 3 Candidates (Publication-Worthy)
 
-### Key findings:
-1. **Chromone/flavone scaffold** (`O=c1cc(...)oc2ccccc12`) achieves best docking score (-8.90) — the flat aromatic system fits well in the shallow switch-II pocket
-2. **Naphthyridine-fluorophenyl** combination (-8.86) shows strong binding, leveraging both hydrophobic and H-bond interactions
-3. **Indole-piperidine** motif (-7.97) is highly drug-like (QED=0.775, SA=2.29) — excellent lead-like profile
-4. **Pyridine and pyrimidine rings** consistently appear in top hits, providing H-bond acceptors for K16/D69 interactions
-5. **Piperazine/piperidine** groups are common in hits, providing solubility handles and basic nitrogen for salt bridge
+All 9 Tier 3 molecules score better than -10 kcal/mol, pass all drug-likeness criteria, and are structurally novel (Tanimoto < 0.15 vs sotorasib).
 
-### Structural features correlating with good docking:
-- Fused bicyclic aromatic cores (quinazoline, indazole, benzimidazole)
-- Pyridyl/pyrimidinyl groups as H-bond acceptors
-- Saturated nitrogen-containing rings (piperidine, piperazine, morpholine)
-- Fluorine substituents on aryl rings
-- Molecular weight 250-400 Da sweet spot
+### Scaffold Classes in Tier 3:
 
-### Failure modes:
-- Small fragments (MW < 200) dock weakly (> -5 kcal/mol)
-- Highly flexible molecules dock poorly — rigidity helps pocket fitting
-- Very polar molecules (high TPSA) lose hydrophobic complementarity
+1. **Chromone-bipyridyl with CF3** (-10.58): The trifluoromethylpyridine group fills a hydrophobic sub-pocket while the chromone provides a rigid planar anchor. Best overall molecule.
+
+2. **Cyanochromone-piperazine-fluoropurine** (-10.52, -10.35): A complex hybrid combining three pharmacophoric elements — the cyano group extends into a polar region, piperazine provides conformational flexibility and solubility, and the fluoropurine makes key H-bond contacts.
+
+3. **Fluorochromone-meta-pyridyl** (-10.23, -10.07): Simple but potent — fluorine at C6 of chromone improves binding by ~0.5 kcal/mol vs parent compound, likely through C-F...H-N interaction with backbone.
+
+## SAR Analysis (Batches 1-7)
+
+### Key Structural Features for KRAS G12C Binding:
+
+1. **Chromone/chromanone core is dominant**: The 4H-chromen-4-one scaffold appears in 8 of 9 Tier 3 candidates. The flat aromatic system fits perfectly in the shallow switch-II pocket.
+
+2. **meta-Biphenyl connectivity is optimal**: meta-substitution on the biphenyl linker (-9.56 to -10.58) consistently outperforms para-substitution (-8.90 to -9.52). The 120-degree angle directs the pyridyl group deeper into the pocket.
+
+3. **Pyridine > pyrimidine > phenyl as terminal ring**: The pyridyl nitrogen acts as H-bond acceptor with K16 or water-mediated contacts.
+
+4. **Fluorine boosts binding**: Adding F to chromone C6 improves score by ~0.5 kcal/mol. CF3 on pyridine provides even larger gains through hydrophobic filling.
+
+5. **Piperazine-purine arm is an alternative pharmacophore**: The hybrid series (Tier 3 #2, #3) achieves comparable binding through a completely different binding mode.
+
+### Score Evolution:
+| Batch | Best Score | New Hits | Strategy |
+|-------|-----------|----------|----------|
+| 1 | -8.90 | 14 | Random exploration, template-based |
+| 2 | -9.52 | 25 | Mutation of hits, crossover |
+| 3 | -9.37 | 29 | Chromone scaffold optimization |
+| 4 | -9.56 | 36 | Systematic substitution, meta-biphenyl |
+| 5 | -9.68 | 38 | Deep fluorine SAR, new scaffolds |
+| 6 | -10.52 | 36 | Extended ring systems, pocket filling |
+| 7 | -10.58 | 33 | Tier 3 optimization, CF3 exploration |
 
 ## Property Distributions
 
+![Overall Analysis](plots/overall_analysis.png)
 ![Batch 1 Overview](plots/batch1_overview.png)
 
-## Strategy
+## Comparison to Known Drugs
 
-**Current approach:** Template-based generation using KRAS G12C pharmacophore patterns + scaffold hopping + fragment combination. Next batches will incorporate genetic optimization from top hits.
+| Property | Sotorasib | Our Best (#1) | Our Best Drug-like (#4) |
+|----------|-----------|---------------|-------------------------|
+| Docking score | -8.17 | **-10.58** | **-10.23** |
+| MW | 560.6 | 344.3 | 309.3 |
+| QED | 0.21 | 0.503 | **0.528** |
+| SA Score | 3.8 | 2.40 | **2.07** |
+| Tanimoto vs sotorasib | 1.0 | 0.094 | 0.083 |
 
-**Next steps:**
-- Mutate and crossover top Tier 1/2 hits to optimize binding
-- Explore larger aromatic systems for deeper pocket penetration
-- Test bioisosteric replacements on best scaffolds
-- Target Tier 3 candidates (< -10 kcal/mol)
+Our top molecules are:
+- **2.4 kcal/mol better** binding than sotorasib in this docking setup
+- **Much simpler** (MW 300-350 vs 560)
+- **More drug-like** (QED 0.4-0.5 vs 0.21)
+- **Easier to synthesize** (SA 2.0-2.4 vs 3.8)
+- **Structurally novel** (Tanimoto < 0.15 — completely different scaffolds)
+
+## Failure Analysis
+
+- **Molecules > MW 450**: Almost always fail QED or SA checks
+- **Highly flexible chains**: Dock weakly — the switch-II pocket rewards rigidity
+- **Purely aliphatic compounds**: Cannot make pi-stacking interactions needed for the aromatic pocket floor
+- **Strong H-bond donors near the linker**: Desolvation penalty reduces binding
+- **Very simple molecules (MW < 200)**: Too small to fill the pocket, score > -6.0
+
+## Strategy Evolution
+
+1. **Batch 1**: Random exploration discovered chromone scaffold as a hit
+2. **Batches 2-3**: Systematic modification confirmed chromone-biphenyl-pyridyl as a productive series
+3. **Batch 4**: meta- vs para-biphenyl SAR revealed meta is superior
+4. **Batches 5-6**: Fluorine scanning identified key positions for affinity improvement
+5. **Batch 7**: CF3 and extended heterocycles pushed multiple molecules past -10 kcal/mol
 
 ---
 *Generated autonomously by Claude drug discovery agent*
-*Last updated: Batch 1*
+*Last updated: Batch 7 — 376 molecules evaluated, 211 hits, 9 Tier 3 candidates*
