@@ -1,0 +1,64 @@
+{
+  "name": "KRAS G12C Inhibitor Discovery",
+  "target": "KRAS G12C (PDB: 6OIM, switch-II allosteric pocket)",
+  "disease": "Non-small cell lung cancer, colorectal cancer, pancreatic cancer",
+  "measurements": {
+    "docking_score_kcal": {
+      "target": "<-7.0",
+      "weight": 30,
+      "unit": "kcal/mol",
+      "description": "AutoDock Vina binding affinity to KRAS G12C switch-II pocket"
+    },
+    "qed": {
+      "target": ">0.4",
+      "weight": 15,
+      "unit": "score (0-1)",
+      "description": "Quantitative estimate of drug-likeness"
+    },
+    "sa_score": {
+      "target": "<5.0",
+      "weight": 15,
+      "unit": "score (1-10)",
+      "description": "Synthetic accessibility (lower = easier to make)"
+    },
+    "lipinski_pass": {
+      "target": "true",
+      "weight": 10,
+      "unit": "bool",
+      "description": "Passes Lipinski Rule of 5"
+    },
+    "pains_pass": {
+      "target": "true",
+      "weight": 5,
+      "unit": "bool",
+      "description": "Not a PAINS (promiscuous interference) compound"
+    },
+    "novelty_vs_sotorasib": {
+      "target": "<0.4",
+      "weight": 15,
+      "unit": "Tanimoto similarity",
+      "description": "Must be structurally different from sotorasib (lower = more novel)"
+    },
+    "herg_safe": {
+      "target": "true",
+      "weight": 5,
+      "unit": "bool",
+      "description": "Low cardiac toxicity risk (hERG channel)"
+    },
+    "ames_safe": {
+      "target": "true",
+      "weight": 5,
+      "unit": "bool",
+      "description": "Low mutagenicity risk"
+    }
+  },
+  "reference_drugs": {
+    "sotorasib": "C=CC(=O)N1CCN(CC1)c1c(F)ccc(NC2=NC=C(C(=O)N3CC(C)CC3=O)N2C2CCCCN2C(=O)C=C)c1F",
+    "adagrasib": "CC1(CN(C1)c1c(F)ccc(NC2=NC=C(C3=CC=NN3C3CCCCN3C(=O)C=C)N2C2CCC(O)CC2)c1F)O"
+  },
+  "binding_site": {
+    "pdb_id": "6OIM",
+    "center": [-1.5, -5.0, 1.5],
+    "box_size": [22, 22, 22]
+  }
+}
