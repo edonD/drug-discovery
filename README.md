@@ -1,24 +1,24 @@
 # KRAS G12C Inhibitor Discovery — Autonomous Agent Results
 
-## Status (Batch 48)
+## Status (Batch 72)
 
 | Metric | Value |
 |--------|-------|
-| Total molecules evaluated | **2,456** |
-| Total hits (pass all criteria) | **991** (40% hit rate) |
-| Tier 1 hits (> -7.0 kcal/mol) | ~230 |
-| Tier 2 leads (> -8.5 kcal/mol) | ~510 |
-| **Tier 3 candidates (> -10.0 kcal/mol)** | **250** |
-| Best docking score | **-12.18 kcal/mol** |
+| Total molecules evaluated | **3,301** |
+| Total hits (pass all criteria) | **1,315** (40% hit rate) |
+| Tier 1 hits (> -7.0 kcal/mol) | ~280 |
+| Tier 2 leads (> -8.5 kcal/mol) | ~715 |
+| **Tier 3 candidates (> -10.0 kcal/mol)** | **320** |
+| Best docking score | **-12.28 kcal/mol** |
 | Sotorasib calibration | -8.17 kcal/mol (PASS) |
-| Improvement over sotorasib | **4.01 kcal/mol** |
-| Unique Murcko scaffolds (Tier 2+) | **150** |
+| Improvement over sotorasib | **4.11 kcal/mol** |
+| Unique Murcko scaffolds (Tier 2+) | **150+** |
 
 ## Top 10 Molecules
 
 | Rank | SMILES | Docking | QED | SA | Novelty | Tier |
 |------|--------|---------|-----|----|---------| -----|
-| 1 | `N#Cc1c(-c2cncc(-c3cnc(F)c(C(F)(F)F)n3)c2O)oc2cc(F)cc(C#N)c2c1=O` | **-12.16** | 0.432 | 3.58 | 0.100 | 3 |
+| 1 | `N#Cc1c(-c2nnc(F)c(-c3nnc(F)c(C(F)(F)F)n3)c2O)oc2cc(F)cc(C#N)c2c1=O` | **-12.28** | 0.413 | 3.79 | 0.095 | 3 |
 | 2 | `N#Cc1c(-c2cnnc(-c3ccc(F)c(C(F)(F)F)c3)c2O)oc2cc(F)cc(C#N)c2c1=O` | **-12.14** | 0.423 | 3.36 | 0.098 | 3 |
 | 3 | `Cc1c(-c2cccc(-c3nnc(F)c(C(F)(F)F)n3)c2O)oc2cc(F)cc(C#N)c2c1=O` | **-12.14** | 0.439 | 3.31 | 0.089 | 3 |
 | 4 | `N#Cc1c(-c2cnnc(-c3cc(C(F)(F)F)c(F)cn3)c2O)oc2cc(F)cc(C#N)c2c1=O` | **-12.12** | 0.432 | 3.52 | 0.098 | 3 |
@@ -37,7 +37,7 @@ All top 10 are **Tier 3** with Tanimoto < 0.11 vs sotorasib (completely novel).
 N#Cc1c(-c2cncc(-c3cnc(F)c(C(F)(F)F)n3)c2O)oc2cc(F)cc(C#N)c2c1=O
 ```
 
-**Docking:** -12.16 kcal/mol | **QED:** 0.432 | **SA:** 3.58 | **MW:** ~430 | **Novelty:** 0.10
+**Docking:** -12.28 kcal/mol | **QED:** 0.413 | **SA:** 3.79 | **MW:** ~440 | **Novelty:** 0.10
 
 Structural features:
 - **6-Fluoro-7-cyanochromone** core with 3-CN (dual cyano)
@@ -115,5 +115,5 @@ Our molecules are **4.0 kcal/mol better** than sotorasib, **simpler**, **more dr
 
 ---
 *Generated autonomously by Claude drug discovery agent*
-*Last updated: Batch 32 — 1,745 molecules evaluated, 753 hits, 197 Tier 3 candidates*
-*Best molecule: -12.16 kcal/mol (4.0 kcal/mol better than sotorasib)*
+*Last updated: Batch 72 — 3,301 molecules evaluated, 1,315 hits, 320 Tier 3 candidates*
+*Best molecule: -12.28 kcal/mol (4.11 kcal/mol better than sotorasib)*
